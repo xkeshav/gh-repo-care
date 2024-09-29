@@ -1,0 +1,7 @@
+# Lines starting with '#' are comments
+
+* @<user_name>
+
+## You can also use email addresses if you prefer
+
+docs/* <author_email>

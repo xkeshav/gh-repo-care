@@ -1,0 +1,9 @@
+# Lines starting with '#' are comments
+
+* @xkeshav
+
+*.js @xkeshav
+
+## You can also use email addresses if you prefer
+
+docs/* xkeshav@gmail.com

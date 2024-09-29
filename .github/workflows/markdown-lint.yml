@@ -1,0 +1,21 @@
+name: markdown-lint
+run-name: learning github action from workflow
+on:
+  push:
+    branches:
+      - main
+      - develop
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Lint Markdown files
+        uses: ./.github/actions/md-lint

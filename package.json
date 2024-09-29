@@ -1,0 +1,81 @@
+{
+  "name": "@xkeshav/gh-repo-health",
+  "version": "1.0.0",
+  "private": false,
+  "displayName": "github-repo-health",
+  "description": "This is a cli tool which help your GitHub repository to make it community supportive by adding necessary health files and customized templates for issues and discussions tab which boost your project for better contribution.",
+  "publisher": "@xkeshav",
+  "homepage": "https://github.com/xkeshav/gh-repo-health/blob/main/README.md",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/xkeshav/gh-repo-health/issues",
+    "email": "xkeshav@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xkeshav/gh-repo-health.git"
+  },
+  "author": {
+    "name": "Keshav Mohta",
+    "email": "xkeshav@gmail.com"
+  },
+  "contributors": [],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/xkeshav"
+  },
+  "keywords": [
+    "health-check",
+    "community files",
+    "gh-repo-health",
+    "cli",
+    "github",
+    "issues templates",
+    "discussion templates",
+    "template"
+  ],
+  "bin": {
+    "ask": "bin/ask.js"
+  },
+  "files": [
+    "__templates/**",
+    "src/**"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "prettier --check  .",
+    "ask": "$npm_package_bin_ask"
+  },
+  "timestamp": {
+    "createdOn": "29 Sep 2024",
+    "updatedOn": "29 Sep 2024"
+  },
+  "dependencies": {
+    "enquirer": "2.4.1",
+    "fs-extra": "11.2.0",
+    "path": "0.12.7",
+    "replace-in-file": "8.2.0",
+    "semver": "^7.6.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "latest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
