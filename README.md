@@ -1,22 +1,31 @@
-# Template Repository
+# GitHub Health File Check
 
 <!-- Badges -->
 
 ![License][license]
 [![Open Issues][issues]][issue-link]
 ![Commit Count][commits]
-![Total Pull Request][PR]
+[![Pull Request][PR]][pr-link]
+![npm version][npm version]
+![total download][download]
 
 <!--  -->
 
 ![gh-repo-check demo gif](src/assets/images/output.gif)
 
-This is a CLI tool which help to check your GitHub repo and generate health files in .github folder ( if not exist) or your own defined folder name
+## What it is ?
 
-this tool add your necessary details in above files and apart from that this tool help to generate customized issues and discussions tabs template
+> [!Info]
+> Read [Official GitHub Docs][community-files] to know what are community health files
+
+This is a npm based CLI tool which help to check your GitHub repo and generate community health files in `.github` folder (if not exist) or user defined folder name.
+
+This tool update necessary details in the community health files and apart from that this tool help to generate customized issues and discussions template
+
+and below are the files in generated folder
 
 <details><summary>
-  <mark>Final Folder Structure</mark>
+  <mark> Health File Tree</mark>
 </summary>
 
 ```lang-none
@@ -80,5 +89,12 @@ This project is licensed under the [MIT License][license-link].
 [issues]: https://badgen.net/github/open-issues/xkeshav/gh-repo-check
 [PR]: https://badgen.net/github/prs/xkeshav/gh-repo-check
 [commits]: https://badgen.net/github/commits/xkeshav/gh-repo-check/main?color=green
-[issue-link]: https://github.com/xkeshav/template/issues
-[license-link]: https://github.com/xkeshav/template/blob/main/LICENSE
+
+<!--[license]: https://badgen.net/npm/license/@xkeshav/gh-repo-check-->
+
+[npm version]: https://badgen.net/npm/v/@xkeshav/gh-repo-check
+[download]: https://badgen.net/npm/dt/@xkeshav/gh-repo-check
+[issue-link]: https://github.com/xkeshav/gh-repo-check/issues
+[license-link]: https://github.com/xkeshav/gh-repo-check/blob/main/LICENSE
+[pr-link]: https://github.com/xkeshav/gh-repo-check/pulls
+[community-files]: https://docs.github.com/en/enterprise-server@3.10/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file
