@@ -77,5 +77,8 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "publishConfig": {
+    "@xkeshav:registry": "https://npm.pkg.github.com"
   }
 }
