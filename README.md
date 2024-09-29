@@ -15,7 +15,7 @@
 
 ## What it is ?
 
-> [!Info]
+> [!Tip]
 > Read [Official GitHub Docs][community-files] to know what are community health files
 
 This is a npm based CLI tool which help to check your GitHub repo and generate community health files in `.github` folder (if not exist) or user defined folder name.
@@ -56,6 +56,8 @@ and below are the files in generated folder
 - Node 20+
 
 ## How to start
+
+this is optional
 
 ```bash
 npm install @xkeshav/gh-repo-check
