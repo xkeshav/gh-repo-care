@@ -2,22 +2,16 @@
 
 <!-- Badges -->
 
-![Template][template]
 ![License][license]
-![Open Issues][issues]
+[![Open Issues][issues]][issue-link]
 ![Commit Count][commits]
 ![Total Pull Request][PR]
 
 <!--  -->
 
+![gh-repo-check demo gif](src/assets/images/output.gif)
+
 This is a CLI tool which help to check your GitHub repo and generate health files in .github folder ( if not exist) or your own defined folder name
-
-few of health files are as followings
-
-- CONTRIBUTING_GUIDE.md
-- CODE_OF_CONDUCT.md
-- SECURITY.md
-- SUPPORT.md
 
 this tool add your necessary details in above files and apart from that this tool help to generate customized issues and discussions tabs template
 
@@ -55,31 +49,36 @@ this tool add your necessary details in above files and apart from that this too
 ## How to start
 
 ```bash
-npm install @xkeshav/gh-repo-health
+npm install @xkeshav/gh-repo-check
 ```
 
 and then run
 
 ```sh
-npx repo-health
+npx gh-repo-check
 ```
 
-it will ask basic question and then generate files; you have to move these files into `.github` folder ( in case you already have .github folder); otherwise it will generate .github folder and place all necessary files.
+it will ask few question and then generate files,
+
+> [!Note]
+> if you already have `.github` folder in your repo, then it will ask new folder name, where it will generate
+> later you have to move these files into `.github` folder, to make it useful.
 
 ### Note
 
-one file _Funding.yml_ file also generated, you can keep it empty for now. working on it
+one file _Funding.yml_ file get generated, you can keep it empty for now.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License][license-link].
 
 ---
 
 <!-- References -->
 
-[template]: https://badgen.net/static/github/template?icon=github
-[license]: https://badgen.net/github/license/xkeshav/gh-repo-health
-[issues]: https://badgen.net/github/open-issues/xkeshav/gh-repo-health
-[PR]: https://badgen.net/github/prs/xkeshav/gh-repo-health
-[commits]: https://badgen.net/github/commits/xkeshav/gh-repo-health/main?color=green
+[license]: https://badgen.net/github/license/xkeshav/gh-repo-check
+[issues]: https://badgen.net/github/open-issues/xkeshav/gh-repo-check
+[PR]: https://badgen.net/github/prs/xkeshav/gh-repo-check
+[commits]: https://badgen.net/github/commits/xkeshav/gh-repo-check/main?color=green
+[issue-link]: https://github.com/xkeshav/template/issues
+[license-link]: https://github.com/xkeshav/template/blob/main/LICENSE

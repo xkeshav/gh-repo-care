@@ -1,20 +1,20 @@
 {
-  "name": "@xkeshav/gh-repo-health",
-  "version": "1.0.0",
+  "name": "@xkeshav/gh-repo-check",
+  "version": "1.0.1",
   "private": false,
-  "displayName": "github-repo-health",
+  "displayName": "github-repo-check",
   "description": "This is a cli tool which help your GitHub repository to make it community supportive by adding necessary health files and customized templates for issues and discussions tab which boost your project for better contribution.",
   "publisher": "@xkeshav",
-  "homepage": "https://github.com/xkeshav/gh-repo-health/blob/main/README.md",
+  "homepage": "https://github.com/xkeshav/gh-repo-check/blob/main/README.md",
   "license": "MIT",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/xkeshav/gh-repo-health/issues",
+    "url": "https://github.com/xkeshav/gh-repo-check/issues",
     "email": "xkeshav@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xkeshav/gh-repo-health.git"
+    "url": "https://github.com/xkeshav/gh-repo-check.git"
   },
   "author": {
     "name": "Keshav Mohta",
@@ -27,8 +27,10 @@
   },
   "keywords": [
     "health-check",
+    "repo=health-check",
     "community files",
-    "gh-repo-health",
+    "health files",
+    "gh-repo-check",
     "cli",
     "github",
     "issues templates",
@@ -36,7 +38,7 @@
     "template"
   ],
   "bin": {
-    "ask": "bin/ask.js"
+    "gh-repo-check": "./bin/health-check.js"
   },
   "files": [
     "__templates/**",
@@ -46,7 +48,10 @@
   "scripts": {
     "start": "node src/index.js",
     "check": "prettier --check  .",
-    "ask": "$npm_package_bin_ask"
+    "check:health": "$npm_package_bin_gh_repo_check",
+    "clean": "rimraf dist",
+    "prepublish": "npm run clean",
+    "publish": "npm publish --access=public"
   },
   "timestamp": {
     "createdOn": "29 Sep 2024",
@@ -77,8 +82,5 @@
   },
   "engines": {
     "node": ">=20"
-  },
-  "publishConfig": {
-    "@xkeshav:registry": "https://npm.pkg.github.com"
   }
 }
