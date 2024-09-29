@@ -1,6 +1,6 @@
 {
   "name": "@xkeshav/gh-repo-check",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": false,
   "displayName": "github-repo-check",
   "description": "This is a cli tool which help your GitHub repository to make it community supportive by adding necessary health files and customized templates for issues and discussions tab which boost your project for better contribution.",
