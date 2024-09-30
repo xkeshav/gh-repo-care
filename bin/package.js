@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 import enquirePkg from "enquirer";
-import semverPkg from "semver";
+//import semverPkg from "semver";
 
-const { valid } = semverPkg;
+//const { valid } = semverPkg;
 // @ts-ignore
 const { Snippet } = enquirePkg;
 
@@ -36,9 +36,9 @@ const packagePrompt = new Snippet({
        */
       // @ts-ignore
       validate(value, state, item) {
-        if (item && item.name === "version" && !valid(value)) {
-          return packagePrompt.styles.danger("version should be a valid semver value");
-        }
+        //if (item && item.name === "version" && !valid(value)) {
+        //  return packagePrompt.styles.danger("version should be a valid semver value");
+        //}
         return true;
       },
     },

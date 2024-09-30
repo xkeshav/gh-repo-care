@@ -11,18 +11,30 @@
 
 <!--  -->
 
+```bash
+ npx gh-repo-check
+```
+
 ![gh-repo-check demo gif](src/assets/images/output.gif)
 
-## What it is ?
+## What are Community Health Files?
 
-> [!Tip]
-> Read [Official GitHub Docs][community-files] to know what are community health files
+> [!TIP]
+> Read official Github docs to know more about [Community Health Files][community-files].
 
-This is a npm based CLI tool which help to check your GitHub repo and generate community health files in `.github` folder (if not exist) or user defined folder name.
+## What this package does ?
 
-This tool update necessary details in the community health files and apart from that this tool help to generate customized issues and discussions template
+This is a npm based CLI tool check your GitHub repo and generate basic community health files in `.github` folder (if not exist) or user defined folder.
 
-and below are the files in generated folder
+This tool generate below files with your personalized information
+
+- necessary community health files
+- Issues templates
+- Discussions templates
+- Pull Request template
+- Funding information
+
+and below is the final folder structure
 
 <details><summary>
   <mark> Health File Tree</mark>
@@ -57,7 +69,7 @@ and below are the files in generated folder
 
 ## How to start
 
-this is optional
+install the repo in your node based project
 
 ```bash
 npm install @xkeshav/gh-repo-check
@@ -69,15 +81,10 @@ and then run
 npx gh-repo-check
 ```
 
-it will ask few question and then generate files,
+it will ask few questions and then generate files.
 
-> [!Note]
-> if you already have `.github` folder in your repo, then it will ask new folder name, where it will generate
-> later you have to move these files into `.github` folder, to make it useful.
-
-### Note
-
-one file _Funding.yml_ file get generated, you can keep it empty for now.
+> [!NOTE]
+> if you have `.github` folder in your repo, then it will ask for a folder name, where it will generate the files, but later you have to move these files into `.github` folder, to make it useful.
 
 ## License
 

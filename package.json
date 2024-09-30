@@ -1,6 +1,6 @@
 {
   "name": "@xkeshav/gh-repo-check",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": false,
   "displayName": "github-repo-check",
   "description": "This is a cli tool which help your GitHub repository to make it community supportive by adding necessary health files and customized templates for issues and discussions tab which boost your project for better contribution.",
@@ -27,15 +27,16 @@
   },
   "keywords": [
     "health-check",
-    "repo=health-check",
+    "repo-health-check",
     "community files",
     "health files",
+    "community health files",
+    "open source",
     "gh-repo-check",
     "cli",
-    "github",
+    "GitHub",
     "issues templates",
-    "discussion templates",
-    "template"
+    "discussion templates"
   ],
   "bin": {
     "gh-repo-check": "./bin/health-check.js"
@@ -51,23 +52,20 @@
     "check:health": "$npm_package_bin_gh_repo_check",
     "clean": "rimraf dist",
     "prepublish": "npm run clean",
-    "publish": "npm publish --access=public"
+    "version": "npm publish --access=public"
   },
   "timestamp": {
     "createdOn": "29 Sep 2024",
-    "updatedOn": "29 Sep 2024"
+    "updatedOn": "30 Sep 2024"
   },
   "dependencies": {
     "enquirer": "2.4.1",
     "fs-extra": "11.2.0",
     "path": "0.12.7",
     "replace-in-file": "8.2.0"
-    "rimraf": "6.0.1",
-    "semver": "7.6.3"
   },
   "devDependencies": {
-    "prettier": "^3.3.3",
-    "typescript": "latest"
+    "prettier": "3.3.3"
   },
   "browserslist": {
     "production": [
