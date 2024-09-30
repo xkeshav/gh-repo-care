@@ -102,7 +102,7 @@ This project is licensed under the [MIT License][license-link].
 <!--[license]: https://badgen.net/npm/license/@xkeshav/gh-repo-check-->
 
 [npm version]: https://badgen.net/npm/v/@xkeshav/gh-repo-check
-[download]: https://badgen.net/npm/dt/@xkeshav/gh-repo-check
+[download]: https://badgen.net/npm/dy/@xkeshav/gh-repo-check
 [issue-link]: https://github.com/xkeshav/gh-repo-check/issues
 [license-link]: https://github.com/xkeshav/gh-repo-check/blob/main/LICENSE
 [pr-link]: https://github.com/xkeshav/gh-repo-check/pulls
