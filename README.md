@@ -1,10 +1,10 @@
 # GitHub Repo Care
 
-This is a npm CLI tool which help your GitHub repository to make it community supportive by adding necessary health files such as security/support/contribution/code of conduct/ funding and customized templates for pull requests/issues and discussions which boost your project for better contribution.
+A npm CLI tool which help your GitHub repository to make it community supportive by generating necessary health files such as security/support/contribution/funding and customized template for pull requests/issues and discussions which boost your project for better contribution.
 
 <!-- Badges -->
 
-![License][license]
+[![License][license]][license-link]
 [![Open Issues][issues]][issue-link]
 [![Commit Count][commits]][commit-link]
 [![Pull Request][PR]][pr-link]
@@ -17,7 +17,7 @@ This is a npm CLI tool which help your GitHub repository to make it community su
  npx gh-repo-care
 ```
 
-![gh-repo-care demo gif](src/assets/images/repo-care.gif)
+![gh-repo-care demo gif](./src/assets/images/output.gif)
 
 ## What are Community Health Files?
 
@@ -26,17 +26,18 @@ This is a npm CLI tool which help your GitHub repository to make it community su
 
 ## What this package does ?
 
-This is a npm based CLI tool check your GitHub repo and generate basic community health files in `.github` folder (if not exist) or user defined folder.
+This is a npm based CLI tool check your GitHub repo and generate community health files in `.github` folder (if not exist) or user defined folder.
 
-This tool generate below files with your personalized information
+This tool generate total 15 files with your personalized information
 
-- necessary community health files
-- Issues templates
-- Discussions templates
-- Pull Request template
-- Funding information
+- Github Community health files (5)
+- Issues template files (5)
+- Discussions template files (2)
+- Pull Request template file(1)
+- Funding (1)
+- CODEOWENERS file (1)
 
-and below is the final folder structure
+below is the final folder structure
 
 <details><summary>
   <mark> Health File Tree</mark>
@@ -80,14 +81,22 @@ npm install @xkeshav/gh-repo-care
 
 and then run
 
-```sh
+```bash
 npx gh-repo-care
 ```
 
-it will ask few questions and then generate files.
+type _y_ on to continue on asking
+
+then it will ask few questions and ask for your consent and then generate necessary health files.
 
 > [!NOTE]
 > if you have `.github` folder in your repo, then it will ask for a folder name, where it will generate the files, but later you have to move these files into `.github` folder, to make it useful.
+
+- Enable _Discussions_ tab from Github repository settings to use discussions template
+- You must have [Github Sponsor][github-sponsor] profile to enable funding for your GitHub Repository;
+
+> [!CAUTION]
+> if you already have `.github` folder and choose _No_ for that question then it will overwrite the files under `.github` folder
 
 ## License
 
@@ -103,9 +112,10 @@ This project is licensed under the [MIT License][license-link].
 [commits]: https://badgen.net/github/commits/xkeshav/gh-repo-care/main?color=green
 [npm version]: https://badgen.net/npm/v/@xkeshav/gh-repo-care
 [download]: https://badgen.net/npm/dy/@xkeshav/gh-repo-care
-[npm-package]: https://www.npmjs.com/package/@xkeshav/gh-repo-are
+[license-link]: https://github.com/xkeshav/gh-repo-care/tree/main?tab=MIT-1-ov-file#readme
+[npm-package]: https://www.npmjs.com/package/@xkeshav/gh-repo-care
 [commit-link]: https://github.com/xkeshav/gh-repo-care/commits/main/
 [issue-link]: https://github.com/xkeshav/gh-repo-care/issues
-[license-link]: https://github.com/xkeshav/gh-repo-care/blob/main/LICENSE
 [pr-link]: https://github.com/xkeshav/gh-repo-care/pulls
 [community-files]: https://docs.github.com/en/enterprise-server@3.10/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file
+[github-sponsor]: https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/sponsoring-an-open-source-contributor-through-github
