@@ -17,7 +17,7 @@ A npm CLI tool which help your GitHub repository to make it community supportive
  npx gh-repo-care
 ```
 
-![gh-repo-care demo gif](./src/assets/images/output.gif)
+![gh-repo-care demo gif](https://github.com/xkeshav/gh-repo-care/blob/main/src/assets/images/output.gif)
 
 ## What are Community Health Files?
 
