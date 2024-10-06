@@ -103,7 +103,7 @@ This project is licensed under the [MIT License][license-link].
 [commits]: https://badgen.net/github/commits/xkeshav/gh-repo-care/main?color=green
 [npm version]: https://badgen.net/npm/v/@xkeshav/gh-repo-care
 [download]: https://badgen.net/npm/dy/@xkeshav/gh-repo-care
-[npm-package]: https://www.npmjs.com/package/@xkeshav/gh-repo-check
+[npm-package]: https://www.npmjs.com/package/@xkeshav/gh-repo-are
 [commit-link]: https://github.com/xkeshav/gh-repo-care/commits/main/
 [issue-link]: https://github.com/xkeshav/gh-repo-care/issues
 [license-link]: https://github.com/xkeshav/gh-repo-care/blob/main/LICENSE
