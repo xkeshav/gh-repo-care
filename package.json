@@ -49,14 +49,13 @@
   "scripts": {
     "start": "node src/index.js",
     "check": "prettier --check  .",
-    "care": "$npm_package_bin_gh_repo_care",
     "clean": "rimraf dist",
     "prepublish": "npm run clean",
     "version": "npm publish --access=public"
   },
   "timestamp": {
     "createdOn": "29 Sep 2024",
-    "updatedOn": "30 Sep 2024"
+    "updatedOn": "09 Oct 2024"
   },
   "dependencies": {
     "enquirer": "2.4.1",
