@@ -6,7 +6,7 @@ runs:
     - shell: bash
       run: |
         npx markdownlint-cli '**/*.md' \
-        --config './.markdownlint.json' \
+        --config '.github/actions/md-lint/.markdownlint.json' \
         --ignore '.github/CONTRIBUTING.md' \
         --ignore '.github/CODE_OF_CONDUCT.md'\
         --ignore 'CHANGELOG.md'
