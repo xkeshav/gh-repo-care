@@ -1,20 +1,20 @@
 {
-  "name": "@xkeshav/gh-repo-check",
-  "version": "1.2.1",
+  "name": "@xkeshav/gh-repo-care",
+  "version": "2.0.0",
   "private": false,
-  "displayName": "github-repo-check",
-  "description": "This is a cli tool which help your GitHub repository to make it community supportive by adding necessary health files and customized templates for issues and discussions tab which boost your project for better contribution.",
+  "displayName": "github-repo-care",
+  "description": "This is a npm CLI tool which help your GitHub repository to make it community supportive by adding necessary health files such as security/ support / code of conduct/ funding and customized templates for issues and discussions which boost your project for better contribution.",
   "publisher": "@xkeshav",
-  "homepage": "https://github.com/xkeshav/gh-repo-check/blob/main/README.md",
+  "homepage": "https://github.com/xkeshav/gh-repo-care/blob/main/README.md",
   "license": "MIT",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/xkeshav/gh-repo-check/issues",
+    "url": "https://github.com/xkeshav/gh-repo-care/issues",
     "email": "xkeshav@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xkeshav/gh-repo-check.git"
+    "url": "https://github.com/xkeshav/gh-repo-care.git"
   },
   "author": {
     "name": "Keshav Mohta",
@@ -32,14 +32,14 @@
     "health files",
     "community health files",
     "open source",
-    "gh-repo-check",
+    "gh-repo-care",
     "cli",
     "GitHub",
     "issues templates",
     "discussion templates"
   ],
   "bin": {
-    "gh-repo-check": "./bin/health-check.js"
+    "gh-repo-care": "./bin/health-check.js"
   },
   "files": [
     "__templates/**",
@@ -49,7 +49,7 @@
   "scripts": {
     "start": "node src/index.js",
     "check": "prettier --check  .",
-    "check:health": "$npm_package_bin_gh_repo_check",
+    "care": "$npm_package_bin_gh_repo_care",
     "clean": "rimraf dist",
     "prepublish": "npm run clean",
     "version": "npm publish --access=public"

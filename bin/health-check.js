@@ -4,7 +4,7 @@ import path from "path";
 import { replaceDetailsInTemplateFiles } from "../src/helpers/replace.js";
 
 // @ts-ignore
-const { Input, Toggle, Form, Confirm } = enquirePkg;
+const { Input, Toggle, Form, Confirm, MultiSelect } = enquirePkg;
 
 // @ts-ignore
 const base_dir = path.dirname(import.meta.dirname);
@@ -40,11 +40,26 @@ const doesGithubFolderExist = new Toggle({
   disabled: "No",
 });
 
+const otherPages = new MultiSelect({
+  name: 'other-page',
+  message: 'What other files you want to create',
+  choices: [
+    { name: 'CHANGELOG.md', value: 'changelog' },
+    { name: 'package.json', value: 'package' },
+    { name: '.editorconfig', value: 'editorconfig' },
+    { name: 'LICENSE(MIT)', value: 'license' },
+  ]
+});
+
+//otherPages.run()
+//  .then(answer => console.log('Answer:', answer))
+//  .catch(console.error);
+
 let userFolderName = "github__";
 
 const userFolder = new Input({
   id: "user_folder",
-  message: "Tell a new folder name where you like to generate the health files?",
+  message: "Tell a folder name where you like to generate the health files?",
   initial: userFolderName,
 });
 
@@ -69,6 +84,7 @@ const askTheUser = () => {
               .then(async (formData) => {
                 console.log("Below are the details you have submitted.");
                 console.table(formData);
+                //await otherPages.run().then(other => console.log('Answer:', other))
                 const dataToSend = { ...formData, isRepoExist, isGithubFolderExist, userFolderName };
                 const consent = await agreeToProceed.run().catch(console.error);
                 consent && replaceDetailsInTemplateFiles(dataToSend, base_dir);

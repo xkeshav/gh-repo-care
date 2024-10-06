@@ -29,10 +29,13 @@ export const replaceDetailsInTemplateFiles = async (info, base_dir) => {
 
   const sourcePath = path.resolve(base_dir, TEMPLATE_FOLDER);
   const destinationPath = path.resolve(isGithubFolderExist ? userFolderName : ".github");
+  const now = new Date()
+  const today = now.toISOString();
+  const year = now.getFullYear()
   const options = {
     files: [`${destinationPath}/**`],
-    from: [/<author_name>/g, /<author_email>/g, /<user_name>/g, /<repo_name>/g],
-    to: [author_name, user_email, user_name, repo_name],
+    from: [/<author_name>/g, /<author_email>/g, /<user_name>/g, /<repo_name>/g, /<today>/g, /<year>/g],
+    to: [author_name, user_email, user_name, repo_name, today, year],
   };
   try {
     await moveFilesToFolder(sourcePath, destinationPath);

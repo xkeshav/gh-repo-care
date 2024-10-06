@@ -12,10 +12,10 @@
 <!--  -->
 
 ```bash
- npx gh-repo-check
+ npx gh-repo-care
 ```
 
-![gh-repo-check demo gif](src/assets/images/output.gif)
+![gh-repo-care demo gif](src/assets/images/repo-care.gif)
 
 ## What are Community Health Files?
 
@@ -49,6 +49,7 @@ and below is the final folder structure
 │   │   ├── announcements.yml
 │   │   └── ideas.yml
 │   ├── FUNDING.yml
+│   ├── GOVERNANCE.md
 │   ├── ISSUE_TEMPLATE
 │   │   ├── BUG_REPORT.yml
 │   │   ├── ENHANCEMENT.yml
@@ -71,14 +72,14 @@ and below is the final folder structure
 
 install the repo in your node based project
 
-```bash
-npm install @xkeshav/gh-repo-check
+```sh
+npm install @xkeshav/gh-repo-care
 ```
 
 and then run
 
 ```sh
-npx gh-repo-check
+npx gh-repo-care
 ```
 
 it will ask few questions and then generate files.
@@ -94,16 +95,16 @@ This project is licensed under the [MIT License][license-link].
 
 <!-- References -->
 
-[license]: https://badgen.net/github/license/xkeshav/gh-repo-check
-[issues]: https://badgen.net/github/open-issues/xkeshav/gh-repo-check
-[PR]: https://badgen.net/github/prs/xkeshav/gh-repo-check
-[commits]: https://badgen.net/github/commits/xkeshav/gh-repo-check/main?color=green
+[license]: https://badgen.net/github/license/xkeshav/gh-repo-care
+[issues]: https://badgen.net/github/open-issues/xkeshav/gh-repo-care
+[PR]: https://badgen.net/github/prs/xkeshav/gh-repo-care
+[commits]: https://badgen.net/github/commits/xkeshav/gh-repo-care/main?color=green
 
-<!--[license]: https://badgen.net/npm/license/@xkeshav/gh-repo-check-->
+<!--[license]: https://badgen.net/npm/license/@xkeshav/gh-repo-care-->
 
-[npm version]: https://badgen.net/npm/v/@xkeshav/gh-repo-check
-[download]: https://badgen.net/npm/dy/@xkeshav/gh-repo-check
-[issue-link]: https://github.com/xkeshav/gh-repo-check/issues
-[license-link]: https://github.com/xkeshav/gh-repo-check/blob/main/LICENSE
-[pr-link]: https://github.com/xkeshav/gh-repo-check/pulls
+[npm version]: https://badgen.net/npm/v/@xkeshav/gh-repo-care
+[download]: https://badgen.net/npm/dy/@xkeshav/gh-repo-care
+[issue-link]: https://github.com/xkeshav/gh-repo-care/issues
+[license-link]: https://github.com/xkeshav/gh-repo-care/blob/main/LICENSE
+[pr-link]: https://github.com/xkeshav/gh-repo-care/pulls
 [community-files]: https://docs.github.com/en/enterprise-server@3.10/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file

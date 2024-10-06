@@ -1,0 +1,49 @@
+{
+  "name": "<repo-name>",
+  "version": "0.0.1",
+  "private": false,
+  "displayName": "",
+  "description": "This is a description of <repo-name>.",
+  "publisher": "@<user_name>",
+  "homepage": "https://github.com/<user_name>/<repo_name>/blob/main/README.md",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/<user_name>/<repo_name>/issues",
+    "email": "<user_email>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<user_name>/<repo_name>.git"
+  },
+  "author": {
+    "name": "<author_name>",
+    "email": "<user_email>"
+  },
+  "contributors": [],
+  "keywords": [
+    "health files",
+    "<repo_name>"
+  ],
+  "scripts": {},
+  "timestamp": {
+    "createdOn": "<today>"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
