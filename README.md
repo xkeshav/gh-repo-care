@@ -1,13 +1,15 @@
-# GitHub Health File Check
+# GitHub Repo Care
+
+This is a npm CLI tool which help your GitHub repository to make it community supportive by adding necessary health files such as security/support/contribution/code of conduct/ funding and customized templates for pull requests/issues and discussions which boost your project for better contribution.
 
 <!-- Badges -->
 
 ![License][license]
 [![Open Issues][issues]][issue-link]
-![Commit Count][commits]
+[![Commit Count][commits]][commit-link]
 [![Pull Request][PR]][pr-link]
-![npm version][npm version]
-![total download][download]
+[![npm version][npm version]][npm-package]
+[![total download][download]][npm-package]
 
 <!--  -->
 
@@ -99,11 +101,10 @@ This project is licensed under the [MIT License][license-link].
 [issues]: https://badgen.net/github/open-issues/xkeshav/gh-repo-care
 [PR]: https://badgen.net/github/prs/xkeshav/gh-repo-care
 [commits]: https://badgen.net/github/commits/xkeshav/gh-repo-care/main?color=green
-
-<!--[license]: https://badgen.net/npm/license/@xkeshav/gh-repo-care-->
-
 [npm version]: https://badgen.net/npm/v/@xkeshav/gh-repo-care
 [download]: https://badgen.net/npm/dy/@xkeshav/gh-repo-care
+[npm-package]: https://www.npmjs.com/package/@xkeshav/gh-repo-check
+[commit-link]: https://github.com/xkeshav/gh-repo-care/commits/main/
 [issue-link]: https://github.com/xkeshav/gh-repo-care/issues
 [license-link]: https://github.com/xkeshav/gh-repo-care/blob/main/LICENSE
 [pr-link]: https://github.com/xkeshav/gh-repo-care/pulls
