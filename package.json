@@ -1,6 +1,6 @@
 {
   "name": "@xkeshav/gh-repo-care",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "private": false,
   "displayName": "github-repo-care",
   "description": "This is a npm CLI tool which help your GitHub repository to make it community supportive by adding necessary health files such as security/support/contribution/funding and customized templates for pull request/issues and discussions which boost your project for better contribution.",
@@ -82,5 +82,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "provenance": true
   }
 }
