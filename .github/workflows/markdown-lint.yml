@@ -1,5 +1,5 @@
 name: markdown-lint
-run-name: learning github action from workflow
+run-name: Linting Markdown files
 on:
   push:
     branches:
