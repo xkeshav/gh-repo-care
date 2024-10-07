@@ -11,6 +11,8 @@ A npm CLI tool which help your GitHub repository to make it community supportive
 [![npm version][npm version]][npm-package]
 [![total download][download]][npm-package]
 
+[![Publish package to GitHub Packages](https://github.com/xkeshav/gh-repo-care/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/xkeshav/gh-repo-care/actions/workflows/publish.yml)
+
 <!--  -->
 
 ```bash
