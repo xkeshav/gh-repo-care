@@ -2,6 +2,10 @@
 
 All notable changes to this repository will be documented in this file.
 
-## [0.0.1]
+## [2.0.0]
 
 - Initial release.
+
+## [2.2.0]
+
+- Added workflow

@@ -19,3 +19,7 @@ All notable changes to this repository will be documented in this file.
 - package rename to gh-repo-care
 - added Governance.md file also
 - update bug_report.yml and pull_request_template.md file
+
+## [2.2.0]
+
+- github package workflow added

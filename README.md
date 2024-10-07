@@ -85,9 +85,11 @@ and then run
 npx gh-repo-care
 ```
 
-type _y_ on to continue on asking
+type _y_ to continue on asking
 
 then it will ask few questions and ask for your consent and then generate necessary health files.
+
+## Notes
 
 > [!NOTE]
 > if you have `.github` folder in your repo, then it will ask for a folder name, where it will generate the files, but later you have to move these files into `.github` folder, to make it useful.

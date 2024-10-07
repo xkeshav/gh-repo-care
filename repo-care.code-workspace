@@ -23,7 +23,8 @@
       "titleBar.activeForeground": "#e7e7e7",
       "titleBar.inactiveBackground": "#21573299",
       "titleBar.inactiveForeground": "#e7e7e799",
-      "sideBar.border": "#2f7c47"
+      "sideBar.border": "#2f7c47",
+      "tab.activeBorder": "#2f7c47"
     },
     "window.zoomLevel": 1.25,
     "editor.suggestSelection": "first",

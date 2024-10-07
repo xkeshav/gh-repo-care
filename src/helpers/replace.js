@@ -40,9 +40,7 @@ export const replaceDetailsInTemplateFiles = async (info, base_dir) => {
   try {
     await moveFilesToFolder(sourcePath, destinationPath);
     const results = await replaceInFile(options);
-    //console.log("Replacement results:", results);
-    //console.log({ sourcePath, destinationPath });
-    console.log(`\n 🎊 health files generated successfully on ${userFolderName}`);
+    console.log(`\n 🎊 community health files generated successfully at ${userFolderName}`);
   } catch (error) {
     console.error("Error occurred:", error);
   }
