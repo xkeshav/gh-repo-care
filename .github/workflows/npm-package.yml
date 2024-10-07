@@ -6,7 +6,6 @@ on:
 
 jobs:
   publish-to-npm:
-    needs: build
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -18,8 +17,9 @@ jobs:
           node-version: "20"
           registry-url: "https://registry.npmjs.org/"
           scope: "@xkeshav"
+          access: "public"
           provenance: true
       - run: npm ci
-      - run: npm publish --provenance --access=public
+      - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
