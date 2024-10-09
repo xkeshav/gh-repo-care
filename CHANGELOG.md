@@ -23,3 +23,12 @@ All notable changes to this repository will be documented in this file.
 ## [2.2.0]
 
 - github package workflow added
+
+## [2.2.3]
+
+- publish to npm
+
+
+## [2.2.4-alpha]
+
+- testing man page

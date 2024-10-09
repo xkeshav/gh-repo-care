@@ -1,6 +1,6 @@
 {
   "name": "@xkeshav/gh-repo-care",
-  "version": "2.2.3",
+  "version": "2.2.4-alpha.1",
   "private": false,
   "displayName": "github-repo-care",
   "description": "This is a npm CLI tool which help your GitHub repository to make it community supportive by adding necessary health files such as security/support/contribution/funding and customized templates for pull request/issues and discussions which boost your project for better contribution.",
@@ -18,9 +18,16 @@
   },
   "author": {
     "name": "Keshav Mohta",
-    "email": "xkeshav@gmail.com"
+    "email": "xkeshav@gmail.com",
+    "url": "https://xkeshav.com"
   },
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "Keshav Mohta",
+      "email": "xkeshav@gmail.com",
+      "url": "https://xkeshav.com"
+    }
+  ],
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/xkeshav"
@@ -38,12 +45,15 @@
     "issues templates",
     "discussion templates"
   ],
-  "bin": {
-    "gh-repo-care": "bin/health-check.js"
+  "directories": {
+    "bin": "bin",
+    "man": "man",
+    "doc": "docs"
   },
   "files": [
     "__templates/**",
-    "src/**"
+    "src/**",
+    "man/**"
   ],
   "main": "src/index.js",
   "scripts": {
@@ -51,8 +61,10 @@
     "check": "prettier --check  .",
     "test": "echo \"Error: no test specified\"",
     "clean": "rimraf dist",
-    "prepublish": "npm run clean",
-    "version": "npm publish --access=public"
+    "prepublish": "npm run man",
+    "version": "npm publish --access=public",
+    "man": "marked-man --version \"git-open $npm_package_version\" --manual \"Git manual\" --section 1 docs/gh-repo-care.md > man/git-repo-care.1",
+    "nuke": "rm -rf node_modules && rm package-lock.json"
   },
   "timestamp": {
     "createdOn": "29 Sep 2024",
@@ -65,6 +77,7 @@
     "replace-in-file": "8.2.0"
   },
   "devDependencies": {
+    "marked-man": "^2.1.0",
     "prettier": "3.3.3",
     "rimraf": "6.0.1"
   },

@@ -38,8 +38,8 @@
     },
     "eslint.validate": [
       "mdx",
-      "markdown",
       "javascript",
+      "typescript"
     ],
     "eslint.options": {
       "extensions": [

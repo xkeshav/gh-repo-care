@@ -1,1 +1,1 @@
-console.log("run `npx gh-repo-care` ");
+console.log("run`npx gh-repo-care`")
