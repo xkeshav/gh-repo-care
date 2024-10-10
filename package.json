@@ -1,9 +1,9 @@
 {
   "name": "@xkeshav/gh-repo-care",
-  "version": "2.2.4-alpha.1",
+  "version": "2.2.4",
   "private": false,
   "displayName": "github-repo-care",
-  "description": "This is a npm CLI tool which help your GitHub repository to make it community supportive by adding necessary health files such as security/support/contribution/funding and customized templates for pull request/issues and discussions which boost your project for better contribution.",
+  "description": "This is a npm CLI tool which help your GitHub repository to make it community supportive by adding necessary health files such as security,support,contribution and custom template for PR,issues and discussions.",
   "publisher": "@xkeshav",
   "homepage": "https://github.com/xkeshav/gh-repo-care/blob/main/README.md",
   "license": "MIT",
@@ -50,6 +50,7 @@
     "man": "man",
     "doc": "docs"
   },
+  "man": "man/gh-repo-care.1",
   "files": [
     "__templates/**",
     "src/**",
