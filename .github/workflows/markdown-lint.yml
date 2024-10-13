@@ -39,6 +39,7 @@ jobs:
           else
             echo "DOCS_CHANGED=false" >> $GITHUB_ENV
           fi
+          echo "${{env.DOCS_CHANGED }} or $DOCS_CHANGED"
 
       - name: Lint Markdown files
         if: ${{env.DOCS_CHANGED == true}}
