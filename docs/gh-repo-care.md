@@ -12,6 +12,8 @@ A community health file generator, it will ask few questions and then generate f
 
 ## EXAMPLES
 
+- added markdown lint conditional workflow.
+
 ## LICENSE
 
 MIT
