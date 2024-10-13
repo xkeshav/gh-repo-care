@@ -35,4 +35,4 @@ All notable changes to this repository will be documented in this file.
 ## [2.2.5]
 
 - Added PULL_REQUEST_TEMPLATE folder
--
+- success message updated.
