@@ -28,7 +28,11 @@ All notable changes to this repository will be documented in this file.
 
 - publish to npm
 
-
 ## [2.2.4-alpha]
 
 - testing man page
+
+## [2.2.5]
+
+- Added PULL_REQUEST_TEMPLATE folder
+-

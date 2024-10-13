@@ -36,7 +36,7 @@ This tool generate total 15 files with your personalized information
 - Github Community health files (5)
 - Issues template files (5)
 - Discussions template files (2)
-- Pull Request template file(1)
+- Pull Request template file (1)
 - Funding (1)
 - CODEOWENERS file (1)
 
@@ -47,24 +47,27 @@ below is the final folder structure
 </summary>
 
 ```lang-none
-├── .github
-│   ├── CODEOWNERS
-│   ├── CODE_OF_CONDUCT.md
-│   ├── CONTRIBUTING.md
-│   ├── DISCUSSION_TEMPLATE
-│   │   ├── announcements.yml
-│   │   └── ideas.yml
-│   ├── FUNDING.yml
-│   ├── GOVERNANCE.md
-│   ├── ISSUE_TEMPLATE
-│   │   ├── BUG_REPORT.yml
-│   │   ├── ENHANCEMENT.yml
-│   │   ├── FEATURE_REQUEST.md
-│   │   ├── QUESTION.md
-│   │   └── config.yml
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   ├── SECURITY.md
-│   ├── SUPPORT.md
+./.github
+├── CODE_OF_CONDUCT.md
+├── CODEOWNERS
+├── CONTRIBUTING.md
+├── DISCUSSION_TEMPLATE
+│   ├── announcements.yml
+│   └── ideas.yml
+├── FUNDING.yml
+├── GOVERNANCE.md
+├── ISSUE_TEMPLATE
+│   ├── BUG_REPORT.yml
+│   ├── config.yml
+│   ├── ENHANCEMENT.yml
+│   ├── FEATURE_REQUEST.md
+│   └── QUESTION.md
+├── PULL_REQUEST_TEMPLATE
+│   └── PULL_REQUEST_TEMPLATE.md
+├── SECURITY.md
+└── SUPPORT.md
+
+4 directories, 15 files
 
 ```
 
@@ -76,7 +79,7 @@ below is the final folder structure
 
 ## How to start
 
-install the repo in your node based project
+Install the repo in your node based project
 
 ```sh
 npm install @xkeshav/gh-repo-care

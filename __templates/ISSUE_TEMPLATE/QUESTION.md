@@ -1,8 +1,8 @@
 ---
 name: Question
 about: Please ask any question about the project
-title: "❓"
-labels: question
+title: "[❓]: "
+labels: ["question"]
 assignees: <user_name>
 ---
 

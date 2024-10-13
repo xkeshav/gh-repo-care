@@ -1,10 +1,11 @@
 #! /usr/bin/env node
 import enquirePkg from "enquirer";
 import path from "path";
+
 import { replaceDetailsInTemplateFiles } from "../src/helpers/replace.js";
 
 // @ts-ignore
-const { Input, Toggle, Form, Confirm, MultiSelect } = enquirePkg;
+const { Input, Toggle, Form, Confirm } = enquirePkg;
 
 // @ts-ignore
 const base_dir = path.dirname(import.meta.dirname);
@@ -40,21 +41,6 @@ const doesGithubFolderExist = new Toggle({
   disabled: "No",
 });
 
-const otherPages = new MultiSelect({
-  name: 'other-page',
-  message: 'What other files you want to create',
-  choices: [
-    { name: 'CHANGELOG.md', value: 'changelog' },
-    { name: 'package.json', value: 'package' },
-    { name: '.editorconfig', value: 'editorconfig' },
-    { name: 'LICENSE(MIT)', value: 'license' },
-  ]
-});
-
-//otherPages.run()
-//  .then(answer => console.log('Answer:', answer))
-//  .catch(console.error);
-
 let userFolderName = "github__";
 
 const userFolder = new Input({
@@ -78,6 +64,8 @@ const askTheUser = () => {
           .then(async (isGithubFolderExist) => {
             if (isGithubFolderExist) {
               userFolderName = await userFolder.run().catch(console.error);
+            } else {
+              userFolderName = ".github";
             }
             userForm
               .run()
@@ -85,7 +73,7 @@ const askTheUser = () => {
                 console.log("Below are the details you have submitted.");
                 console.table(formData);
                 //await otherPages.run().then(other => console.log('Answer:', other))
-                const dataToSend = { ...formData, isRepoExist, isGithubFolderExist, userFolderName };
+                const dataToSend = { ...formData, isRepoExist, userFolderName, isGithubFolderExist };
                 const consent = await agreeToProceed.run().catch(console.error);
                 consent && replaceDetailsInTemplateFiles(dataToSend, base_dir);
               })
@@ -96,7 +84,7 @@ const askTheUser = () => {
         userForm
           .run()
           .then(async (formData) => {
-            const dataToSend = { ...formData, isRepoExist };
+            const dataToSend = { ...formData, isRepoExist, userFolderName };
             const consent = await agreeToProceed.run().catch(console.error);
             consent && replaceDetailsInTemplateFiles(dataToSend, base_dir);
           })
