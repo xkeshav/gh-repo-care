@@ -36,3 +36,7 @@ All notable changes to this repository will be documented in this file.
 
 - Added PULL_REQUEST_TEMPLATE folder
 - success message updated.
+
+## [2.2.8]
+
+- Update README

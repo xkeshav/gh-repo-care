@@ -1,6 +1,6 @@
 # GitHub Repo Care
 
-A npm CLI tool which help your GitHub repository to make it community supportive by generating necessary health files such as security/support/contribution/funding and customized template for pull requests/issues and discussions which boost your project for better contribution.
+A npm based CLI tool which help your GitHub repository to make it community supportive by generating necessary health files such as security/support/contribution/funding and customized template for pull requests/issues and discussions which boost your project for better contribution.
 
 <!-- Badges -->
 
@@ -29,7 +29,7 @@ A npm CLI tool which help your GitHub repository to make it community supportive
 
 ## What this package does ?
 
-This is a npm based CLI tool check your GitHub repo and generate community health files in `.github` folder (if not exist) or user defined folder.
+This is a npm based CLI tool which check your GitHub repo and generate community health files which should be placed in your `.github` folder.
 
 This tool generate total 15 files with your personalized information
 

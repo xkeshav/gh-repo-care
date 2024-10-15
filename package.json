@@ -1,6 +1,6 @@
 {
   "name": "@xkeshav/gh-repo-care",
-  "version": "2.2.6",
+  "version": "2.2.8",
   "private": false,
   "displayName": "github-repo-care",
   "description": "This is a npm CLI tool which help your GitHub repository to make it community supportive by adding necessary health files such as security,support,contribution and custom template for PR,issues and discussions.",
@@ -41,7 +41,7 @@
     "gh-repo-care",
     "npm cli",
     "npx",
-    "GitHub",
+    "GitHub Community Files",
     "issues templates",
     "discussion templates"
   ],
@@ -63,10 +63,9 @@
   },
   "timestamp": {
     "createdOn": "Sep 29, 2024",
-    "updatedOn": "Oct 13, 2024"
+    "updatedOn": "Oct 15, 2024"
   },
   "dependencies": {
-    "@xkeshav/gh-repo-care": "file:xkeshav-gh-repo-care-2.2.7.tgz",
     "enquirer": "2.4.1",
     "fs-extra": "11.2.0",
     "path": "0.12.7",
