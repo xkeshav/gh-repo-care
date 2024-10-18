@@ -18,6 +18,7 @@ jobs:
 
       - name: Check changed files
         id: check_file_changed
+        shell: bash
         run: |
           echo "### File Check! :rocket:" >> $GITHUB_STEP_SUMMARY
           # Check if there is a previous commit
@@ -40,7 +41,7 @@ jobs:
             echo "DOCS_CHANGED=true" >> $GITHUB_ENV
             echo "No changes in docs."
           fi
-          echo "value of $GITHUB_ENV"
+          echo "value of ${{env.DOCS_CHANGED}}"
 
       - name: Lint Markdown files
         if: ${{ env.DOCS_CHANGED == 'true' }}
