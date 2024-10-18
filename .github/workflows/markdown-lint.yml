@@ -35,14 +35,13 @@ jobs:
 
           # Check if any of the changed files have a .md extension
           if echo "$changed_files" | grep -q '\.md$'; then
-            echo "DOCS_CHANGED=false" >> $GITHUB_OUTPUT
+            echo "DOCS_CHANGED=false" >> $GITHUB_ENV
             echo "Docs have changed."
           else
-            echo "DOCS_CHANGED=true" >> $GITHUB_OUTPUT
+            echo "DOCS_CHANGED=true" >> $GITHUB_ENV
             echo "No changes in docs."
           fi
-          echo "step {{steps.check_file_changed.outputs}}"
 
       - name: Lint Markdown files
-        if: ${{ steps.check_file_changed.outputs == 'true' }}
+        if: ${{ $DOCS_CHANGED == 'true' }}
         uses: ./.github/actions/md-lint
