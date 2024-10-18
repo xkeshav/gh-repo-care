@@ -42,5 +42,5 @@ jobs:
           fi
 
       - name: Lint Markdown files
-        if: ${{ env.DOCS_CHANGED == 'true' }}
+        if: ${{ env.check_file_changed.DOCS_CHANGED == 'true' }}
         uses: ./.github/actions/md-lint

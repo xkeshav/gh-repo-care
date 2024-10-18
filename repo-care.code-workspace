@@ -41,12 +41,6 @@
       "javascript",
       "typescript"
     ],
-    "eslint.options": {
-      "extensions": [
-        ".js",
-        ".md",
-      ],
-    },
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "editor.minimap.renderCharacters": false,
@@ -77,7 +71,7 @@
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
       "package.json": "package-lock.json",
-      ".gitignore": ".prettier*, .editorconfig, .eslint*, .npm*, .nojekyll",
+      ".gitignore": ".editorconfig, .jshintrc, .prettier*, .eslint*, .npm*, .nojekyll, .markdown*",
       "readme.md": "*.md",
     },
     "git.enableSmartCommit": true,
