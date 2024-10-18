@@ -33,7 +33,7 @@ This is a npm based CLI tool which check your GitHub repo and generate community
 
 This tool generate total 15 files with your personalized information
 
-- Github Community health files (5)
+- Github Community Health files (5)
 - Issues template files (5)
 - Discussions template files (2)
 - Pull Request template file (1)
