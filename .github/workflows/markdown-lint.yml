@@ -40,7 +40,8 @@ jobs:
             echo "DOCS_CHANGED=false" >> $GITHUB_ENV
             echo "No changes in docs."
           fi
+          echo "value of $DOCS_CHANGED"
 
       - name: Lint Markdown files
-        if: ${{ env.check_file_changed.DOCS_CHANGED == 'true' }}
+        if: ${{ $DOCS_CHANGED == 'true' }}
         uses: ./.github/actions/md-lint
