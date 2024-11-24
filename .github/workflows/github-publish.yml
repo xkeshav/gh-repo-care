@@ -3,13 +3,14 @@ name: Publish package to GitHub Packages
 
 on:
   release:
-    types: [created, edited, prereleased]
+    types: [created, prereleased]
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       # Setup .npmrc file to publish to GitHub Packages
@@ -17,9 +18,8 @@ jobs:
         with:
           node-version: "20.x"
           registry-url: "https://npm.pkg.github.com"
-          # Defaults to the user or organization that owns the workflow file
           scope: "@xkeshav"
-      - run: yarn
+      - run: npm install
 
       - name: Publish package
         run: npm publish --access restricted
