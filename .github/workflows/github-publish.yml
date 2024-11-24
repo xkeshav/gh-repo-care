@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      id-token: write
       packages: write
     steps:
       - uses: actions/checkout@v4
@@ -20,7 +19,7 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           # Defaults to the user or organization that owns the workflow file
           scope: "@xkeshav"
-      - run: npm install
+      - run: yarn
 
       - name: Publish package
         run: npm publish --access restricted
